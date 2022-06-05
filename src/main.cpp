@@ -41,12 +41,12 @@ int main()
 	if (report()==false)
 	{
 		SPDLOG_ERROR("Report failed, please report manually");
-		send_daily_report_mail("Daily report is failed!!!!");
+		send_daily_report_mail("打卡失败!!!!!!!!!!!!!!!!!!!!");
 	}
 	else
 	{
 		SPDLOG_INFO("report succeeed!");
-		send_daily_report_mail("Daily report is succeed.");
+		send_daily_report_mail("打卡成功");
 	}
 	this_thread::sleep_for(5s);
 	return 0;
